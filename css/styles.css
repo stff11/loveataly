@@ -192,30 +192,30 @@ a:hover {
   background-color: #f4f4f4;
 }
 
-/* Container styling for a two-column layout */
 .question-block {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 20px 0;
+  align-items: center;
+  margin-top: .75rem;
 }
 
 .question-block:nth-child(2n) {
-  flex-direction: row-reverse; /* Flip image and text for every second item */
+  grid-template-areas: "image text";
 }
 
-/* Styling for the text and image */
-.question-block .text {
-  flex: 1;
+.question-block:nth-child(2n + 1) {
+  grid-template-areas: "text image";
+}
+
+.question-block > .text {
+  grid-area: text;
   padding: 5px;
   text-align: center;
 }
 
-.question-block img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  flex: 1;
+.question-block > div:not(.text) {
+  grid-area: image;
 }
 
 .question-block img {
