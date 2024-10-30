@@ -41,14 +41,13 @@
 
 <body>
     <nav class="navbar">
-        <!-- <a class="navbar-brand" href="#"><img src="images/logo.webp" alt="Loveataly Logo"></a> -->
         <input type="checkbox" id="navbar-toggle" class="navbar-toggle" />
         <div class="navbar-toggler-container">
             <a href="#navbarNav" class="navbar-toggler" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </a>
         </div>
-        <div class="collapse navbar-collapse show" id="navbarNav"> <!-- Add 'show' class -->
+        <div class="collapse navbar-collapse show" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about-us">ABOUT</a></li>
@@ -61,8 +60,10 @@
 
     <section id="hero">
         <img src="images/logo.webp" alt="Loveataly Logo">
-        <a href="#menu-container" class="cta-button green">MENU</a>
-        <a href="tel:07853809667" class="cta-button red">CALL US</a>
+        <div>
+            <a href="#menu-container" class="cta-button green">MENU</a>
+            <a href="tel:07853809667" class="cta-button red">CALL US</a>
+        </div>
     </section>
 
     <section class="container my-4" id="about-us">
