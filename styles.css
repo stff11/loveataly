@@ -34,9 +34,15 @@ a:hover {
   opacity: 0.9;
 }
 
-/* .navbar {
-  padding: 0.1rem 1rem;
-} */
+.navbar {
+  position: fixed; /* Fixed position for navbar */
+  top: 0;
+  right: 0; /* Align the navbar to the right */
+  left: auto; /* Optional: ensure it does not extend to the left */
+  z-index: 1000; /* Ensure it is above the hero section */
+  background-color: #fff;
+  padding: 0.5rem;
+}
 
 .navbar-nav {
   background-color: var(--primary-color);
@@ -77,7 +83,9 @@ a:hover {
   background: url('images/promo.webp') no-repeat center center/cover;
   color: #fff;
   text-align: center;
-  /* padding: 350px 0; */
+  padding: 350px 0;
+  position: relative;
+  z-index: 1;
 }
 
 #hero h1 {
