@@ -154,45 +154,26 @@ a:hover {
 
 .text-block {
   flex: 1;
-  padding: 1.5rem;
+  padding: 5rem;
   transition: background-image 0.3s ease-in-out;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: left;
   color: #fff;
-  font-size: 1.1rem;
-  line-height: 1.4rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* Green block on left side */
-.green-background {
-  background-color: #1e683b; /* Green color */
-  background-image: none;
-}
-
-/* Red block on right side */
-.red-background {
-  background-color: #ee2431; /* Red color */
-  background-image: none;
-}
-
 /* Show background images on hover */
-.green-background:hover{
+.left-block:hover{
   background-image: url('images/van2.jpeg');
 }
-.red-background:hover {
+.right-block:hover {
   background-image: url('images/van4.jpeg');
-}
-
-/* Responsive adjustments for smaller screens */
-@media (min-width: 768px) {
-  .about-content {
-      flex-direction: row; /* Two columns on larger screens */
-  }
 }
 
 .bold {
@@ -418,4 +399,8 @@ footer p {
   }
   #hero h1 {
     font-size: 1.5rem;
+  }
+  .about-content {
+    flex-direction: row; /* Two columns on larger screens */
+  } 
 }
