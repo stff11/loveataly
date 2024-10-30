@@ -34,9 +34,9 @@ a:hover {
   opacity: 0.9;
 }
 
-.navbar {
+/* .navbar {
   padding: 0.1rem 1rem;
-}
+} */
 
 .navbar-nav {
   background-color: var(--primary-color);
@@ -77,12 +77,12 @@ a:hover {
   background: url('images/promo.webp') no-repeat center center/cover;
   color: #fff;
   text-align: center;
-  padding: 350px 0;
+  /* padding: 350px 0; */
 }
 
 #hero h1 {
   font-size: 2.5rem;
-  background-color: var(--button-hover-color);
+  background-color: var(--button-color);
   color: #fff;
   width: 50%;
   margin: auto;
@@ -323,16 +323,16 @@ footer p {
  /***** End Cookies  *****/
 
 @media (max-width: 480px) {
-  .navbar {
+  /* .navbar {
     height: 100px;
   }
   .navbar-brand img {
     max-height: 85px;
-  }
+  } */
   .nav-item {
     margin-left: auto;
   }
-  #hero {
+  /* #hero {
     padding: 250px 0;
-  }
+  } */
 }
