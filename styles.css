@@ -82,11 +82,15 @@ a:hover {
 
 #hero h1 {
   font-size: 2.5rem;
+  background-color: var(--button-hover-color);
+  color: #fff;
+  width: 50%;
+  margin: auto;
 }
 
 .cta-button {
   color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 2.5rem;
   border-radius: 5px;
   text-decoration: none;
   margin-top: 1rem;
@@ -216,23 +220,21 @@ ul li {
 .btn {
   transition: background-color 0.3s ease;
   font-weight: 500;
-  box-shadow: 1px 1px 2px 2px #1d1c5a;
-  background:linear-gradient(to bottom, #1e0957 5%, #160358 100%);
+  box-shadow: 1px 1px 2px 2px var(--button-hover-color);;
   background-color: var(--button-color);
   border-radius:6px;
-  border:1px solid #1307b8;
+  border:1px solid var(--button-hover-color);;
   display:inline-block;
   cursor:pointer;
   color: #fff;
-  padding:6px 24px;
+  padding:5px 24px;
   text-decoration:none;
-  text-shadow:0px 1px 0px #091580;
-  margin: 20px;
-  width: 150px;
+  text-shadow:0px 1px 0px var(--button-hover-color);
+  margin: 5px;
 }
 .btn:hover {
-    background:linear-gradient(to bottom, #0e0541 5%, #050218 100%);
-    background-color: var(--button-hover-color);
+    background: #fff;
+    color: var(--button-hover-color);
 }
 /****** My Button End  ******/
 
@@ -326,5 +328,11 @@ footer p {
   }
   .navbar-brand img {
     max-height: 85px;
+  }
+  .nav-item {
+    margin-left: auto;
+  }
+  #hero {
+    padding: 250px 0;
   }
 }
