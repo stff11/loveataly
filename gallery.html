@@ -43,12 +43,13 @@
       <img src="images/buffet.jpeg" alt="Buffer" onclick="showFullImage(5)">
       <img src="images/parmo-bun.jpeg" alt="Parmo bun" onclick="showFullImage(6)">
     </div>
-    <div id="fullImageModal" class="modal" onclick="closeFullImage()">
+    <div id="fullImageModal" class="modal">
+      <div class="overlay" onclick="closeFullImage()"></div> <!-- Overlay for closing modal -->
       <span class="close" onclick="closeFullImage()">&times;</span>
       <img class="modal-content" id="fullImage">
       <button class="prev" onclick="changeImage(-1)">&#10094;</button>
       <button class="next" onclick="changeImage(1)">&#10095;</button>
-    </div>
+  </div>
   </section>
 
   <script>
