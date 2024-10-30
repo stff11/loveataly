@@ -188,27 +188,28 @@ a:hover {
   background-color: #f4f4f4;
 }
 
-.flexy {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 1.5rem;
+.question-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
 }
 
-.flexy img {
-  width: 100%;
-  max-width: 48%;
-  object-fit: cover;
-  border-radius: 8px;
+.question-block:nth-child(2n) {
+  grid-template-areas: "image text";
 }
 
-.center {
-  margin-top: 1.5rem;
+.question-block:nth-child(2n + 1) {
+  grid-template-areas: "text image";
 }
 
-.center img {
-  max-width: 100%;
-  border-radius: 8px;
+.question-block > .text {
+  grid-area: text;
+  padding: 20px;
+}
+
+.question-block > div:not(.text) {
+  grid-area: image;
 }
 
 .menu-container {
