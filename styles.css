@@ -7,7 +7,7 @@ body {
   height: 155px;
 }
 .navbar-nav {
-  margin-right: auto;
+  background-color: #fff;
 }
 
 #hero {
