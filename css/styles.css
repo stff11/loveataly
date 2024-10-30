@@ -197,7 +197,6 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   align-items: center;
-  margin-top: .75rem;
 }
 
 .question-block:nth-child(2n) {
