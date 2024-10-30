@@ -15,6 +15,10 @@ body {
 #navbarNav {
   display: none;
 }
+ /* Hide the checkbox */
+#navbar-toggle {
+  display: none;
+}
 
 /* Show the navbar when it's targeted */
 #navbarNav:target {
