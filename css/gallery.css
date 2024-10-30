@@ -23,7 +23,7 @@
   position: relative;
   margin: auto;
   display: block;
-  max-width: 90%;
+  max-width: 75%;
   height: auto;
   z-index: 2; /* Ensure the image stays above overlay */
 }
