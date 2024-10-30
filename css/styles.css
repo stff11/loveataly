@@ -141,8 +141,9 @@ a:hover {
 }
 
 .about-header .five-star {
-  width: 50px; /* Adjust as needed for sizing */
+  width: 125px;
   height: auto;
+  margin-bottom: 0.75rem;
 }
 
 /* Styling for text blocks */
@@ -218,6 +219,7 @@ a:hover {
 
 .question {
   font-style: italic;
+  font-family: 'Baskerville';
 }
 
 .menu-container {
