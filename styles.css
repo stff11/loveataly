@@ -94,23 +94,99 @@ a:hover {
   color: #fff;
   width: 50%;
   margin: auto;
+  text-transform: capitalize;
 }
 
 .cta-button {
-  color: #fff;
   padding: 0.75rem 2.5rem;
-  border-radius: 5px;
   text-decoration: none;
   margin-top: 1rem;
   display: inline-block;
+  width: 150px;
 }
 
 .green {
   background-color: var(--green);
+  color: #fff;
 }
 
 .red {
   background-color: var(--red);
+  color: #fff;
+}
+
+.green:hover {
+  background-color: #fff;
+  color: var(--green);
+}
+
+.red:hover {
+  background-color: #fff;
+  color: var(--red);
+}
+
+/* Styles for About Us header */
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.about-header .five-star {
+  width: 50px; /* Adjust as needed for sizing */
+  height: auto;
+}
+
+/* Styling for text blocks */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.text-block {
+  flex: 1;
+  padding: 1.5rem;
+  color: white;
+  transition: background-image 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Green block on left side */
+.green-background {
+  background-color: #1e683b; /* Green color */
+  background-image: none;
+}
+
+/* Red block on right side */
+.red-background {
+  background-color: #ee2431; /* Red color */
+  background-image: none;
+}
+
+/* Show background images on hover */
+.green-background:hover{
+  background-image: url('images/van2.jpeg');
+  color: black; /* Optional: Change text color on hover */
+}
+.red-background:hover {
+  background-image: url('images/van4.jpeg');
+  color: black; /* Optional: Change text color on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (min-width: 768px) {
+  .about-content {
+      flex-direction: row; /* Two columns on larger screens */
+  }
 }
 
 .bold {
@@ -331,16 +407,9 @@ footer p {
  /***** End Cookies  *****/
 
 @media (max-width: 480px) {
-  /* .navbar {
-    height: 100px;
-  }
-  .navbar-brand img {
-    max-height: 85px;
-  } */
   .nav-item {
     margin-left: auto;
   }
-  /* #hero {
-    padding: 250px 0;
-  } */
+  #hero h1 {
+    font-size: 1.5rem;
 }
