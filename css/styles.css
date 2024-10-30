@@ -205,6 +205,7 @@ a:hover {
 .question-block > .text {
   grid-area: text;
   padding: 20px;
+  text-align: center;
 }
 
 .question-block > div:not(.text) {
@@ -213,6 +214,10 @@ a:hover {
 
 .question-block img {
   max-width: 100%;
+}
+
+.question {
+  font-style: italic;
 }
 
 .menu-container {
@@ -268,23 +273,6 @@ img.preview:hover {
 
 .social-media {
   font-size: 4rem;
-}
-
-.question {
-  font-style: italic;
-}
-#question1 {
-  background: url('../images/buffet.jpeg') no-repeat center center/cover;
-}
-#question2 {
-  background: url('../images/pies.webp') no-repeat center center/cover;
-}
-#question3 {
-  background: url('../images/parmo.jpeg') no-repeat center center/cover;
-}
-
-.background {
-  backdrop-filter: blur(30px);
 }
 
 /****** My Button  ******/
