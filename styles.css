@@ -11,33 +11,32 @@ body {
   background-color: #f8f9fa;
 }
 
-.navbar-collapse {
-  display: none; /* Hide navbar by default */
-}
-
-.navbar-toggle:checked + .navbar-collapse {
-  display: block; /* Show navbar when checked */
-}
-
-/* Optional: Hide the checkbox */
-.navbar-toggle {
+/* Initially hide the navbar */
+#navbarNav {
   display: none;
 }
 
-/* Ensuring toggler works correctly */
+/* Show the navbar when it's targeted */
+#navbarNav:target {
+  display: block; /* or flex depending on your layout */
+}
+
+/* Optional styling for smooth transitions */
+.navbar-collapse {
+  transition: max-height 0.3s ease; /* Smooth transition */
+}
+
+/* Make the toggler clickable */
 .navbar-toggler {
   cursor: pointer;
 }
 
-/* Close the menu on link click (CSS-only workaround) */
+/* Optional: Style for links */
 .nav-link {
-  cursor: pointer; /* Make it clear that the links are clickable */
+  display: block; /* Ensuring the links take the full width */
+  padding: 0.5rem 1rem;
 }
 
-/* To ensure clicking links will uncheck the checkbox */
-.nav-link:active {
-  display: block; /* Keep the display block when active */
-}
 
 #hero {
   background: url('images/promo.webp') no-repeat center center/cover;
