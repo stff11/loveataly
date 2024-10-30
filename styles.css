@@ -90,10 +90,7 @@ a:hover {
 
 #hero h1 {
   font-size: 2.5rem;
-  background-color: var(--button-color);
-  color: #fff;
-  width: 50%;
-  margin: auto;
+  color: var(--green);
 }
 #hero h3 {
   text-transform: capitalize;
