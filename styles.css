@@ -6,6 +6,9 @@ body {
 .navbar {
   height: 155px;
 }
+.navbar-nav {
+  margin-right: auto;
+}
 
 #hero {
   background: url('images/promo.webp') no-repeat center center/cover;
@@ -45,14 +48,14 @@ body {
   background-color: #f4f4f4;
 }
 
-.flex {
+.flexy {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   margin-top: 1.5rem;
 }
 
-.flex img {
+.flexy img {
   width: 100%;
   max-width: 48%;
   object-fit: cover;
