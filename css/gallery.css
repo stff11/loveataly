@@ -1,3 +1,7 @@
+.gallery-preview img {
+  max-width: 250px;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -63,4 +67,14 @@
 
 .prev:hover, .next:hover, .close:hover {
   color: #bbb;
+}
+
+@media (max-width: 480px) {
+  .gallery-preview {
+    display: grid;
+    gap: 10px;
+  }
+  .gallery-preview img {
+    max-width: 300px;
+  }
 }
