@@ -55,8 +55,8 @@ a:hover {
   min-height: 100vh;
 }
 
-#hero.img {
-  backdrop-filter: blur(20px);
+#logo {
+  max-width: 340px;
 }
 
 .cta-button {
@@ -225,7 +225,6 @@ img.preview:hover {
   padding:5px 24px;
   text-decoration:none;
   text-transform: uppercase;
-  margin: 5px;
   border-radius: 0;
   transition: transform 0.1s, box-shadow 0.1s;
   box-shadow: 3px 6px #1a2533; /* Shadow offset for top-left light source */
