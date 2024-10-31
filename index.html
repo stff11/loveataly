@@ -17,6 +17,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -47,23 +48,6 @@
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-md fixed-top">
-        <input type="checkbox" id="navbar-toggle" class="navbar-toggle" />
-        <div class="navbar-toggler-container">
-            <a href="#navbarNav" class="navbar-toggler" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </a>
-        </div>
-        <div class="collapse navbar-collapse show" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about-us">ABOUT</a></li>
-                <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
-                <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact-container">CONTACT US</a></li>
-            </ul>
-        </div>
-    </nav> -->
     <nav class="navbar">
         <input type="checkbox" id="navbar-toggle" class="navbar-toggle" />
         <label for="navbar-toggle" class="navbar-toggler">
@@ -137,13 +121,13 @@
     </section>
 
     <section class="container my-4 question-block">
-            <div class="text">
-                <h4 class="question">Want to see more options?</h4>
-                <button class="btn" onclick="toggleSection('menu-container')">Check our Menus</button>
-            </div>
-            <div>
-                <img src="images/crocchette2.jpeg" alt="arancini">
-            </div>
+        <div class="text">
+            <h4 class="question">Want to see more options?</h4>
+            <button class="btn" onclick="toggleSection('menu-container')">Check our Menus</button>
+        </div>
+        <div>
+            <img src="images/crocchette2.jpeg" alt="arancini">
+        </div>
         </span>
     </section>
 
@@ -153,7 +137,7 @@
         </div>
         <div class="text">
             <h4 class="question">Want to discuss your requirements?</h4>
-            <a class="btn" href="#contact-container">Contact us</a>
+            <button class="btn" href="#contact-container">Contact us</button>
         </div>
     </section>
 
@@ -192,142 +176,143 @@
         </div>
     </section>
 
-        <section class="hidden-section container my-4" id="menu-container">
-            <div class="menu-container">
-              <h1 class="h1 pb-3">MENUS</h1>
-              <div class="menu-card">
+    <section class="hidden-section container my-4" id="menu-container">
+        <div class="menu-container">
+            <h1 class="h1 pb-3">MENUS</h1>
+            <div class="menu-card">
                 <h5>Please note: All prices are plus VAT</h5>
                 <span class="bold">Card payments accepted.</span>
-              </div>
-              <div class="menu-card">
+            </div>
+            <div class="menu-card">
                 <h2>Fancy a hot Buffet?</h2>
                 <p class="price">P.O.A</p>
                 Choose from the following options...
                 <ul>
-                  <li>Jackets with tuna, cheese or cheese beans or cheese savoury</li>
-                  <li>Meatball in tomato sauce</li>
-                  <li>Chicken curry</li>
-                  <li>Chicken parmos</li>
-                  <li>Roast veggies</li>
-                  <li>Fusilli pasta with Bolognese sauce</li>
-                  <li>Lasagna</li>
-                  <li>Steak/mince onion pies with beans/mushy peas</li>
-                  <li>Salmon with lemon and herbs</li>
-                  <li>Wedges</li>
-                  <li>Yorkshire puddings with a choice of meat including pigs in blankets, sausages, roast pork/gammon/beef/chicken/</li>
-                  <li>Pulled pork with gravy</li>
-                  <li>Chilli con carne</li> 
-                  <li>Cheese onion croquettes</li> 
-                  <li>Roast Chicken drumsticks</li>
-                  <li>wings with BBQ sauce</li>
+                    <li>Jackets with tuna, cheese or cheese beans or cheese savoury</li>
+                    <li>Meatball in tomato sauce</li>
+                    <li>Chicken curry</li>
+                    <li>Chicken parmos</li>
+                    <li>Roast veggies</li>
+                    <li>Fusilli pasta with Bolognese sauce</li>
+                    <li>Lasagna</li>
+                    <li>Steak/mince onion pies with beans/mushy peas</li>
+                    <li>Salmon with lemon and herbs</li>
+                    <li>Wedges</li>
+                    <li>Yorkshire puddings with a choice of meat including pigs in blankets, sausages, roast
+                        pork/gammon/beef/chicken/</li>
+                    <li>Pulled pork with gravy</li>
+                    <li>Chilli con carne</li>
+                    <li>Cheese onion croquettes</li>
+                    <li>Roast Chicken drumsticks</li>
+                    <li>wings with BBQ sauce</li>
                 </ul>
-              </div>
-      
-              <div class="menu-card">
+            </div>
+
+            <div class="menu-card">
                 <h2>Menu 1 (Breakfast)</h2>
                 <p class="price">£6.30pp</p>
                 <ul>
-                  <li>Danish pastries</li>
-                  <li>Croissant</li>
-                  <li>Granola yogurt</li>
-                  <li>Ham, cheese & crackers</li>
-                  <li>Fresh fruit</li>
-                  <li>Mini bread buns</li>
-                  <li>Butter & jam</li>
-                  <li>Plates, serviettes, cutlery</li>
+                    <li>Danish pastries</li>
+                    <li>Croissant</li>
+                    <li>Granola yogurt</li>
+                    <li>Ham, cheese & crackers</li>
+                    <li>Fresh fruit</li>
+                    <li>Mini bread buns</li>
+                    <li>Butter & jam</li>
+                    <li>Plates, serviettes, cutlery</li>
                 </ul>
                 <p class="additional">Add sausage or/and bacon buns for only £2.30pp</p>
                 <p class="additional">Add Italian sweets for £1.80pp</p>
-              </div>
-      
-              <div class="menu-card">
+            </div>
+
+            <div class="menu-card">
                 <h2>Menu 2</h2>
                 <p class="price">£6.65pp</p>
                 <ul>
-                  <li>Selection sandwiches (buns/wraps or sliced bread)</li>
-                  <li>Pork pies</li>
-                  <li>Sausage rolls</li>
-                  <li>Crisps</li>
-                  <li>Cakes</li>
-                  <li>Plates, serviettes</li>
+                    <li>Selection sandwiches (buns/wraps or sliced bread)</li>
+                    <li>Pork pies</li>
+                    <li>Sausage rolls</li>
+                    <li>Crisps</li>
+                    <li>Cakes</li>
+                    <li>Plates, serviettes</li>
                 </ul>
                 <p class="additional">Add Italian sweets for £1.80pp</p>
-              </div>
-      
-              <div class="menu-card">
+            </div>
+
+            <div class="menu-card">
                 <h2>Menu 3</h2>
                 <p class="price">£8.50pp</p>
                 <ul>
-                  <li>Selection sandwiches (buns/wraps or sliced bread)</li>
-                  <li>Pork pies</li>
-                  <li>Sausage rolls</li>
-                  <li>Pasta salad</li>
-                  <li>Cheese onion croquettes</li>
-                  <li>Crisps</li>
-                  <li>Cakes</li>
-                  <li>Fresh fruit</li>
-                  <li>Plates, cutlery, serviettes</li>
+                    <li>Selection sandwiches (buns/wraps or sliced bread)</li>
+                    <li>Pork pies</li>
+                    <li>Sausage rolls</li>
+                    <li>Pasta salad</li>
+                    <li>Cheese onion croquettes</li>
+                    <li>Crisps</li>
+                    <li>Cakes</li>
+                    <li>Fresh fruit</li>
+                    <li>Plates, cutlery, serviettes</li>
                 </ul>
-              </div>
-      
-              <div class="menu-card">
+            </div>
+
+            <div class="menu-card">
                 <h2>Menu 4: Italian</h2>
                 <p class="price">£10.50pp (minimum 10pp)</p>
                 <ul>
-                  <li>Caprese salad</li>
-                  <li>Italian antipasto</li>
-                  <li>Cheese onion croquettes</li>
-                  <li>Mix Italian style focaccia sandwich</li>
-                  <li>Italian chicken pasta</li>
-                  <li>Roasted chicken legs</li>
-                  <li>Cakes</li>
-                  <li>Fresh fruit</li>
-                  <li>Plates, cutlery, serviettes</li>
+                    <li>Caprese salad</li>
+                    <li>Italian antipasto</li>
+                    <li>Cheese onion croquettes</li>
+                    <li>Mix Italian style focaccia sandwich</li>
+                    <li>Italian chicken pasta</li>
+                    <li>Roasted chicken legs</li>
+                    <li>Cakes</li>
+                    <li>Fresh fruit</li>
+                    <li>Plates, cutlery, serviettes</li>
                 </ul>
                 <p class="additional">Add Italian sweets for £1.80pp</p>
                 <p class="additional">Add chicken scalloppine limone for £2.00pp</p>
-              </div>
-      
-              <div class="menu-card">
+            </div>
+
+            <div class="menu-card">
                 <h2>Platters</h2>
                 <p class="price">£24</p>
                 <ul>
-                  <li>40 mixed sliced bread (serves 10 ppl)</li>
-                  <li>Hams, tuna, egg mayonnaise, veggie, chicken</li>
+                    <li>40 mixed sliced bread (serves 10 ppl)</li>
+                    <li>Hams, tuna, egg mayonnaise, veggie, chicken</li>
                 </ul>
                 <p class="additional">
-                  Add 10 mini sausage rolls <br />
-                  10 mini pork pies <br />
-                  10 mini scotch eggs <br />
-                  for £14
+                    Add 10 mini sausage rolls <br />
+                    10 mini pork pies <br />
+                    10 mini scotch eggs <br />
+                    for £14
                 </p>
                 <p class="additional">
-                  Add 10 mix cup cakes and fresh fruit <br />
-                  for £14
+                    Add 10 mix cup cakes and fresh fruit <br />
+                    for £14
                 </p>
-              </div>
             </div>
-          </section>
+        </div>
+    </section>
 
-        <section class="hidden-section container my-4" id="gallery">
-            <h1 class="pb-4"><span>GALLERY</span></h1>
-            <div class="gallery-preview">
-              <img src="images/sandwich.webp" alt="Sandwich" onclick="showFullImage(0)">
-              <img src="images/pasta.webp" alt="Pasta" onclick="showFullImage(1)">
-              <img src="images/chicken.webp" alt="Chicken" onclick="showFullImage(2)">
-              <img src="images/pies.webp" alt="Pies" onclick="showFullImage(3)">
-              <img src="images/arancini.jpeg" alt="Arancini" onclick="showFullImage(4)">
-              <img src="images/buffet.jpeg" alt="Buffer" onclick="showFullImage(5)">
-              <img src="images/parmo-bun.jpeg" alt="Parmo bun" onclick="showFullImage(6)">
-            </div>
-            <div id="fullImageModal" class="modal">
-              <div class="overlay" onclick="closeFullImage()"></div> <!-- Overlay for closing modal -->
-              <span class="close" onclick="closeFullImage()">&times;</span>
-              <img class="modal-content" id="fullImage">
-              <button class="prev" onclick="changeImage(-1)">&#10094;</button>
-              <button class="next" onclick="changeImage(1)">&#10095;</button>
-          </div>
-          </section>
+    <section class="hidden-section container my-4" id="gallery">
+        <h1 class="pb-4"><span>GALLERY</span></h1>
+        <div class="gallery-preview">
+            <img src="images/sandwich.webp" alt="Sandwich" onclick="showFullImage(0)">
+            <img src="images/pasta.webp" alt="Pasta" onclick="showFullImage(1)">
+            <img src="images/chicken.webp" alt="Chicken" onclick="showFullImage(2)">
+            <img src="images/pies.webp" alt="Pies" onclick="showFullImage(3)">
+            <img src="images/arancini.jpeg" alt="Arancini" onclick="showFullImage(4)">
+            <img src="images/buffet.jpeg" alt="Buffer" onclick="showFullImage(5)">
+            <img src="images/parmo-bun.jpeg" alt="Parmo bun" onclick="showFullImage(6)">
+        </div>
+        <div id="fullImageModal" class="modal">
+            <div class="overlay" onclick="closeFullImage()"></div> <!-- Overlay for closing modal -->
+            <span class="close" onclick="closeFullImage()">&times;</span>
+            <img class="modal-content" id="fullImage">
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+    </section>
 
     <footer class="text-center">
         <p>
@@ -353,38 +338,38 @@
     <script src="script.js"></script>
 
     <!-- For Gallery -->
-    <script> 
+    <script>
         let currentIndex = 0;
         const images = [
-          "images/sandwich.webp",
-          "images/pasta.webp",
-          "images/chicken.webp",
-          "images/pies.webp",
-          "images/arancini.jpeg",
-          "images/buffet.jpeg",
-          "images/parmo-bun.jpeg"
+            "images/sandwich.webp",
+            "images/pasta.webp",
+            "images/chicken.webp",
+            "images/pies.webp",
+            "images/arancini.jpeg",
+            "images/buffet.jpeg",
+            "images/parmo-bun.jpeg"
         ];
-    
+
         function showFullImage(index) {
-          currentIndex = index;
-          document.getElementById("fullImageModal").style.display = "block";
-          document.getElementById("fullImage").src = images[currentIndex];
+            currentIndex = index;
+            document.getElementById("fullImageModal").style.display = "block";
+            document.getElementById("fullImage").src = images[currentIndex];
         }
-    
+
         function closeFullImage() {
-          document.getElementById("fullImageModal").style.display = "none";
+            document.getElementById("fullImageModal").style.display = "none";
         }
-    
+
         function changeImage(direction) {
-          currentIndex += direction;
-          if (currentIndex < 0) {
-            currentIndex = images.length - 1; // Wrap to last image
-          } else if (currentIndex >= images.length) {
-            currentIndex = 0; // Wrap to first image
-          }
-          document.getElementById("fullImage").src = images[currentIndex];
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1; // Wrap to last image
+            } else if (currentIndex >= images.length) {
+                currentIndex = 0; // Wrap to first image
+            }
+            document.getElementById("fullImage").src = images[currentIndex];
         }
-      </script>
+    </script>
 
 </body>
 
