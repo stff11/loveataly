@@ -1,0 +1,71 @@
+/* General Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 10px 0;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  width: 100%; /* Full width initially */
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-collapse {
+  width: 100%;
+  max-width: 1200px; /* Adjust to match container width */
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: Style for links */
+.nav-link {
+  display: block; /* Ensuring the links take the full width */
+  padding: 0.5rem 1rem;
+  color: #1a1a1a;
+}
+
+/* Desktop: Always Open */
+@media (min-width: 768px) {
+  .navbar {
+      padding: 10px;
+  }
+  .navbar-toggler {
+      display: none;
+  }
+}
+
+/* Mobile: Collapsed Navbar */
+@media (max-width: 767px) {
+  .navbar {
+      width: auto;
+      right: 20px;
+      top: 10px;
+      left: auto;
+      transform: none;
+      padding: 5px;
+  }
+
+  .navbar-collapse {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      padding: 10px;
+  }
+
+  #navbar-toggle:checked + .navbar-toggler + .navbar-collapse {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .navbar-toggler {
+      display: block;
+      cursor: pointer;
+      z-index: 1100;
+  }
+}
