@@ -52,7 +52,7 @@ a:hover {
   right: 0; /* Align the navbar to the right */
   left: auto; /* Optional: ensure it does not extend to the left */
   z-index: 1000; /* Ensure it is above the hero section */
-  background-color: #fff;
+  backdrop-filter: blur(10px);
   padding: 0.5rem;
 }
 
@@ -88,7 +88,7 @@ a:hover {
 .nav-link {
   display: block; /* Ensuring the links take the full width */
   padding: 0.5rem 1rem;
-  color: var(--text-color);
+  color: #1a1a1a;
 }
 
 #hero {
