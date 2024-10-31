@@ -1,30 +1,22 @@
 /* General Navbar Styles */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  position: absolute;
+  top: 5%;
+  right: 5%;
   z-index: 1000;
-  padding: 10px 0;
-  background: transparent;
-  backdrop-filter: blur(10px);
-  width: 100%; /* Full width initially */
-  display: flex;
-  justify-content: center;
 }
 
-.navbar-collapse {
+/* .navbar-collapse {
   width: 100%;
-  max-width: 1200px; /* Adjust to match container width */
+  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Optional: Style for links */
 .nav-link {
   display: block; /* Ensuring the links take the full width */
-  padding: 0.5rem 1rem;
   color: #1a1a1a;
 }
 
@@ -40,8 +32,7 @@
   }
 
   .navbar-nav {
-      display: flex;
-      gap: 20px; /* Space between links */
+      display: inline;
   }
 
   .nav-item {
@@ -50,8 +41,17 @@
 
   .nav-link {
       text-decoration: none;
-      color: inherit;
-      padding: 5px 10px;
+      padding: 5px 0;
+      backdrop-filter: blur(15px);
+      width: 140px;
+      text-align: center;
+      font-size: 1rem;
+      transition: transform 0.1s, box-shadow 0.1s;
+      box-shadow: 3px 6px #1a2533; /* Shadow offset for top-left light source */
+  }
+  .nav-link:active {
+    transform: translate(3px, 6px); /* Match shadow offset for consistent depth */
+    box-shadow: 1px 2px #1a2533; /* Smaller shadow for pressed effect */
   }
 }
 
@@ -72,8 +72,8 @@
       top: 100%;
       right: 0;
       background-color: rgba(255, 255, 255, 0.8);
-      border-radius: 8px;
       padding: 10px;
+      width: max-content;
   }
 
   /* Show collapse when checkbox is checked */
@@ -86,5 +86,13 @@
       display: block;
       cursor: pointer;
       z-index: 1100;
+  }
+
+  .navbar-toggler-icon {
+    background-color: var(--green);
+  }
+
+  .nav-link {
+    text-align: right;
   }
 }
