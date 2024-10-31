@@ -17,7 +17,7 @@
 /* Optional: Style for links */
 .nav-link {
   display: block; /* Ensuring the links take the full width */
-  color: #1a1a1a;
+  color: #fff;
 }
 
 /* Hide checkbox on all screens */
@@ -28,30 +28,34 @@
 /* Desktop: Links inline, no toggle */
 @media (min-width: 768px) {
   .navbar-toggler {
-      display: none;
+    display: none;
   }
 
   .navbar-nav {
-      display: inline;
+    display: inline;
   }
 
   .nav-item {
-      display: inline-block;
+    display: inline-block;
   }
 
   .nav-link {
-      text-decoration: none;
-      padding: 5px 0;
-      backdrop-filter: blur(15px);
-      width: 140px;
-      text-align: center;
-      font-size: 1rem;
-      transition: transform 0.1s, box-shadow 0.1s;
-      box-shadow: 3px 6px #1a2533; /* Shadow offset for top-left light source */
+    text-decoration: none;
+    padding: 5px 0;
+    backdrop-filter: blur(15px);
+    width: 140px;
+    text-align: center;
+    font-size: 1rem;
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: 3px 6px #1a2533; /* Shadow offset for top-left light source */
   }
   .nav-link:active {
     transform: translate(3px, 6px); /* Match shadow offset for consistent depth */
     box-shadow: 1px 2px #1a2533; /* Smaller shadow for pressed effect */
+  }
+  .nav-link:hover {
+    box-shadow: 0 0 10px 4px rgba(46, 64, 87, 0.7), 3px 6px #1a2533;
+    /* Soft glow around button with original shadow preserved */
   }
 }
 
@@ -71,7 +75,7 @@
       position: absolute;
       top: 100%;
       right: 0;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: var(--button-color);
       padding: 10px;
       width: max-content;
   }
@@ -89,10 +93,12 @@
   }
 
   .navbar-toggler-icon {
-    background-color: var(--green);
+    background-color: var(--button-color);
   }
 
   .nav-link {
     text-align: right;
+    width: max-content;
+    margin-right: 20px;
   }
 }
