@@ -10,3 +10,8 @@ function closeFullImage() {
     const modal = document.getElementById("fullImageModal");
     modal.style.display = "none";
 }
+
+function toggleSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.classList.toggle('active'); // Toggle the active class
+}
