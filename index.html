@@ -131,51 +131,6 @@
         </span>
     </section>
 
-    <section class="container my-4 question-block">
-        <div>
-            <img src="images/caprese.jpeg" alt="caprese">
-        </div>
-        <div class="text">
-            <h4 class="question">Want to discuss your requirements?</h4>
-            <button class="btn" href="#contact-container">Contact us</button>
-        </div>
-    </section>
-
-    <section class="container my-4 question-block">
-        <div class="text">
-            <h4 class="question">Want to see more events we have covered?</h4>
-            <button class="btn" onclick="toggleSection('gallery')">See our gallery</button>
-        </div>
-        <div>
-            <img src="images/parmo.jpeg" alt="parmo">
-        </div>
-    </section>
-
-    <section class="container my-5" id="contact-container">
-        <h1 class="pb-4">GET IN TOUCH</h1>
-        <p>Please reach out with any inquiries you may have. We are happy to answer questions regarding allergies or
-            nutritional needs.</p>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="contact-info">
-                    <address>
-                        <p>32-33 Harwood Court,<br> Riverside Park,<br> Middlesbrough,<br> TS2 1PU</p>
-                    </address>
-                    <h4><i class="fab fa-whatsapp"></i> <a
-                            href="https://api.whatsapp.com/send?phone=4407853809667">07853809667</a></h4>
-                    <h4><i class="fas fa-envelope"></i> <a href="mailto:loveataly@outlook.com">loveataly@outlook.com</a>
-                    </h4>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="social-media">
-                    <a href="http://www.facebook.com/loveataly" target="_blank" title="Find us on Facebook"><i
-                            class="fab fa-facebook-square"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="hidden-section container my-4" id="menuSection">
         <div class="menu-container">
             <h1 class="h1 pb-3">MENUS</h1>
@@ -292,6 +247,27 @@
                 </p>
             </div>
         </div>
+        <button class="btn" onclick="toggleSection('gallery')">Close menu</button>
+    </section>
+
+    <section class="container my-4 question-block">
+        <div>
+            <img src="images/caprese.jpeg" alt="caprese">
+        </div>
+        <div class="text">
+            <h4 class="question">Want to discuss your requirements?</h4>
+            <button class="btn" href="#contact-container">Contact us</button>
+        </div>
+    </section>
+
+    <section class="container my-4 question-block">
+        <div class="text">
+            <h4 class="question">Want to see more events we have covered?</h4>
+            <button class="btn" onclick="toggleSection('gallery')">See our gallery</button>
+        </div>
+        <div>
+            <img src="images/parmo.jpeg" alt="parmo">
+        </div>
     </section>
 
     <section class="hidden-section container my-4" id="gallery">
@@ -311,6 +287,32 @@
             <img class="modal-content" id="fullImage">
             <button class="prev" onclick="changeImage(-1)">&#10094;</button>
             <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+        <button class="btn" onclick="toggleSection('gallery')">Close gallery</button>
+    </section>
+
+    <section class="container my-5" id="contact-container">
+        <h1 class="pb-4">GET IN TOUCH</h1>
+        <p>Please reach out with any inquiries you may have. We are happy to answer questions regarding allergies or
+            nutritional needs.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact-info">
+                    <address>
+                        <p>32-33 Harwood Court,<br> Riverside Park,<br> Middlesbrough,<br> TS2 1PU</p>
+                    </address>
+                    <h4><i class="fab fa-whatsapp"></i> <a
+                            href="https://api.whatsapp.com/send?phone=4407853809667">07853809667</a></h4>
+                    <h4><i class="fas fa-envelope"></i> <a href="mailto:loveataly@outlook.com">loveataly@outlook.com</a>
+                    </h4>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="social-media">
+                    <a href="http://www.facebook.com/loveataly" target="_blank" title="Find us on Facebook"><i
+                            class="fab fa-facebook-square"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
