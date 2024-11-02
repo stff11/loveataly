@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Photo Swipe JS photo gallery -->
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+    <script src="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.umd.js"></script>
+
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/gallery.css">
@@ -58,7 +62,7 @@
                 <li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about-us">ABOUT</a></li>
                 <li class="nav-item"><a class="nav-link" href="#menu-container">MENU</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">GALLERY</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery-container">GALLERY</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact-container">CONTACT US</a></li>
             </ul>
         </div>
@@ -95,33 +99,30 @@
         </div>
     </section>
 
-    <section class="container my-4" id="menu-container">
-        <h1 class="h1 pb-3">SAMPLE MENU</h1>
-        <h5>We deliver a delicious range of breakfasts, sandwiches, hot and cold drinks, pies, and pastries every
-            weekday.</h5>
-        <span class="bold">Card payments accepted.</span>
-        <div class="menu-container">
-            <div class="menu-card">
-                <h2>Menu 1 (Breakfast)</h2>
-                <p class="price">£6.30pp</p>
-                <ul>
-                    <li>Danish pastries</li>
-                    <li>Croissant</li>
-                    <li>Granola yogurt</li>
-                    <li>Ham, cheese & crackers</li>
-                    <li>Fresh fruit</li>
-                    <li>Mini bread buns</li>
-                    <li>Butter & jam</li>
-                    <li>Plates, serviettes, cutlery</li>
-                </ul>
-                <p class="additional">Add sausage or/and bacon buns for only £2.30pp</p>
-                <p class="additional">Add Italian sweets for £1.80pp</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="container my-4 question-block">
+    <section class="container my-4 question-block" id="menu-container">
         <div class="text">
+            <h1 class="h1 pb-3">SAMPLE MENU</h1>
+            <h5>We deliver a delicious range of breakfasts, sandwiches, hot and cold drinks, pies, and pastries every
+                weekday.</h5>
+            <span class="bold">Card payments accepted.</span>
+            <div class="menu-container">
+                <div class="menu-card">
+                    <h2>Menu 1 (Breakfast)</h2>
+                    <p class="price">£6.30pp</p>
+                    <ul>
+                        <li>Danish pastries</li>
+                        <li>Croissant</li>
+                        <li>Granola yogurt</li>
+                        <li>Ham, cheese & crackers</li>
+                        <li>Fresh fruit</li>
+                        <li>Mini bread buns</li>
+                        <li>Butter & jam</li>
+                        <li>Plates, serviettes, cutlery</li>
+                    </ul>
+                    <p class="additional">Add sausage or/and bacon buns for only £2.30pp</p>
+                    <p class="additional">Add Italian sweets for £1.80pp</p>
+                </div>
+            </div>
             <h4 class="question">Want to see more options?</h4>
             <button class="btn" onclick="toggleSection('menuSection')">Check our Menus</button>
         </div>
@@ -250,10 +251,10 @@
         <button class="btn" onclick="toggleSection('menuSection')">Close menu</button>
     </section>
 
-    <section class="container my-4 question-block">
+    <section class="container my-4 question-block" id="gallery-container">
         <div class="text">
-            <h4 class="question">Want to see more events we have covered?</h4>
-            <button class="btn" onclick="toggleSection('gallery')">See our gallery</button>
+            <h4 class="question">Want to see events we have covered?</h4>
+            <button class="btn" onclick="toggleSection('gallery')">Check our gallery</button>
         </div>
         <div>
             <img src="images/parmo.jpeg" alt="parmo">
@@ -263,48 +264,96 @@
     <section class="hidden-section container my-4" id="gallery">
         <h1 class="pb-4"><span>GALLERY</span></h1>
         <div class="gallery-preview">
-            <img src="images/sandwich.webp" alt="Sandwich" onclick="showFullImage(0)">
-            <img src="images/pasta.webp" alt="Pasta" onclick="showFullImage(1)">
-            <img src="images/chicken.webp" alt="Chicken" onclick="showFullImage(2)">
-            <img src="images/pies.webp" alt="Pies" onclick="showFullImage(3)">
+            <a href="images/sandwich.webp" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/sandwich.webp" alt="Sandwich">
+            </a>
+            <a href="images/pasta.webp" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/pasta.webp" alt="Pasta">
+            </a>
+            <a href="images/chicken.webp" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/chicken.webp" alt="Chicken">
+             </a>
+             <a href="images/pies.webp" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/pies.webp" alt="Pies">
+            </a>
 
-            <img src="images/arancini.jpeg" alt="Arancini" onclick="showFullImage(4)">
-            <img src="images/buffet.jpeg" alt="Buffer" onclick="showFullImage(5)">
-            <img src="images/caprese2.jpeg" alt="Caprese" onclick="showFullImage(4)">
-            <img src="images/chicken.jpeg" alt="Chicken" onclick="showFullImage(5)">
+            <a href="images/arancini.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/arancini.jpeg" alt="Arancini">
+            </a>
+            <a href="images/buffet.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/buffet.jpeg" alt="Buffer">
+            </a>
+            <a href="images/caprese2.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/caprese2.jpeg" alt="Caprese">
+            </a>
+            <a href="images/chicken.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/chicken.jpeg" alt="Chicken">
+            </a>
+            
+            <a href="images/focacce.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/focacce.jpeg" alt="Focacce">
+            </a>
+            <a href="images/sandwiches.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/sandwiches.jpeg" alt="Buns">
+            </a>
+            <a href="images/sandwiches2.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/sandwiches2.jpeg" alt="Sandwiches">
+            </a>
+            <a href="images/parmo.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/parmo.jpeg" alt="Parmo">
+            </a>
 
-            <img src="images/focacce.jpeg" alt="Focacce" onclick="showFullImage(4)">
-            <img src="images/sandwiches.jpeg" alt="Buns" onclick="showFullImage(5)">
-            <img src="images/sandwiches2.jpeg" alt="Sandwiches" onclick="showFullImage(4)">
-            <img src="images/parmo.jpeg" alt="Parmo" onclick="showFullImage(5)">
+            <a href="images/sausage-rolls.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/sausage-rolls.jpeg" alt="sausage rolls">
+            </a>
+            <a href="images/pies.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/pies.jpeg" alt="Pies">
+            </a>
+            <a href="images/parmo-bun.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/parmo-bun.jpeg" alt="Parmos">
+            </a>
+            <a href="images/merchandise.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/merchandise.jpeg" alt="Merchandise">
+            </a>
 
-            <img src="images/sausage-rolls.jpeg" alt="sausage rolls" onclick="showFullImage(4)">
-            <img src="images/pies.jpeg" alt="Pies" onclick="showFullImage(5)">
-            <img src="images/parmo-bun.jpeg" alt="Parmos" onclick="showFullImage(4)">
-            <img src="images/merchandise.jpeg" alt="Merchandise" onclick="showFullImage(5)">
+            <a href="images/pasta.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/pasta.jpeg" alt="Pasta">
+            </a>
+            <a href="images/pasta2.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/pasta2.jpeg" alt="Psta Salad">
+            </a>
+            <a href="images/mix.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/mix.jpeg" alt="Antipasto misto">
+            </a>
+            <a href="images/arancini.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/arancini.jpeg" alt="Arancini">
+            </a>
 
-            <img src="images/pasta.jpeg" alt="Pasta" onclick="showFullImage(4)">
-            <img src="images/pasta2.jpeg" alt="Psta Salad" onclick="showFullImage(5)">
-            <img src="images/mix.jpeg" alt="Antipasto misto" onclick="showFullImage(4)">
-            <img src="images/arancini.jpeg" alt="Arancini" onclick="showFullImage(5)">
+            <a href="images/sweets.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/sweets.jpeg" alt="Sweets">
+            </a>
+            <a href="images/cakes.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/cakes.jpeg" alt="Cakes">
+            </a>
+            <a href="images/fruit&sweets.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/fruit&sweets.jpeg" alt="Fruit & sweets">
+            </a>
+            <a href="images/tiramisu.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/tiramisu.jpeg" alt="Tiramisu">
+            </a>
 
-            <img src="images/sweets.jpeg" alt="Sweets" onclick="showFullImage(4)">
-            <img src="images/cakes.jpeg" alt="Cakes" onclick="showFullImage(5)">
-            <img src="images/fruit&sweets.jpeg" alt="Fruit & sweets" onclick="showFullImage(4)">
-            <img src="images/tiramisu.jpeg" alt="Tiramisu" onclick="showFullImage(5)">
-
-            <img src="images/van.jpeg" alt="van" onclick="showFullImage(4)">
-            <img src="images/van2.jpeg" alt="van" onclick="showFullImage(5)">
-            <img src="images/van3.jpeg" alt="van" onclick="showFullImage(4)">
-            <img src="images/van4.jpeg" alt="van" onclick="showFullImage(5)">
-
-        </div>
-        <div id="fullImageModal" class="modal">
-            <div class="overlay" onclick="closeFullImage()"></div> <!-- Overlay for closing modal -->
-            <span class="close" onclick="closeFullImage()">&times;</span>
-            <img class="modal-content" id="fullImage">
-            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
-            <button class="next" onclick="changeImage(1)">&#10095;</button>
+            <a href="images/van.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/van.jpeg" alt="van">
+            </a>  
+            <a href="images/van2.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/van2.jpeg" alt="van">
+            </a>
+            <a href="images/van3.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/van3.jpeg" alt="van">
+            </a>
+            <a href="images/van4.jpeg" data-pswp-width="1200" data-pswp-height="800">
+                <img src="images/van4.jpeg" alt="van">
+            </a>
         </div>
         <button class="btn" onclick="toggleSection('gallery')">Close gallery</button>
     </section>
@@ -363,37 +412,14 @@
 
     <!-- For Gallery -->
     <script>
-        let currentIndex = 0;
-        const images = [
-            "images/sandwich.webp",
-            "images/pasta.webp",
-            "images/chicken.webp",
-            "images/pies.webp",
-            "images/arancini.jpeg",
-            "images/buffet.jpeg",
-            "images/parmo-bun.jpeg"
-        ];
-
-        function showFullImage(index) {
-            currentIndex = index;
-            document.getElementById("fullImageModal").style.display = "block";
-            document.getElementById("fullImage").src = images[currentIndex];
-        }
-
-        function closeFullImage() {
-            document.getElementById("fullImageModal").style.display = "none";
-        }
-
-        function changeImage(direction) {
-            currentIndex += direction;
-            if (currentIndex < 0) {
-                currentIndex = images.length - 1; // Wrap to last image
-            } else if (currentIndex >= images.length) {
-                currentIndex = 0; // Wrap to first image
-            }
-            document.getElementById("fullImage").src = images[currentIndex];
-        }
-    </script>
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '.gallery',
+          children: 'a',
+          pswpModule: PhotoSwipe
+        });
+      
+        lightbox.init();
+      </script>
 
 </body>
 
