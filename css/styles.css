@@ -43,7 +43,7 @@ a {
   color: var(--button-color);
 }
 a:hover {
-  color: var(--button-hover-color-color);
+  color: var(--button-hover-color);
 }
 
 #hero {
@@ -70,12 +70,12 @@ a:hover {
 }
 
 #logo {
-  max-width: 340px;
+  max-width: 450px;
 }
 
 .cta-button {
-  padding: 0.75rem 2.5rem;
-  width: 165px;
+  padding: 0.75rem 2.5rem !important;
+  width: 225px;
 }
 
 /* Styles for About Us header */
@@ -237,6 +237,8 @@ img.preview:hover {
 
 /****** My Button  ******/
 .btn {
+  font-family: monospace;
+  font-size: 1rem;
   transition: background-color 0.3s ease;
   font-weight: 500;
   background-color: var(--button-color);
@@ -278,7 +280,7 @@ footer p {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #1a1a1a;
+  background-color: #8b8b8b;
   color: #ffffff;
   padding: 1rem;
   display: flex;
@@ -308,6 +310,9 @@ footer p {
     font-size: 1.1rem;
     line-height: 1.4rem;
   }
+  #logo {
+    max-width: 340px;
+}
   .intro {
     font-size: 1.3rem;
     line-height: 1.6rem;
