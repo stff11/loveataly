@@ -223,12 +223,8 @@ ul {
   margin-top: 5px;
 }
 
-img.preview {
-  max-width: 250px;
-  margin: 5px;
-}
-img.preview:hover {
-  scale: 1.2;
+.contact-info {
+  padding: 0;
 }
 
 .social-media {
