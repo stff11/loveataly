@@ -73,6 +73,7 @@
   .gallery-preview {
     display: grid;
     gap: 10px;
+    text-align: center;
   }
   .gallery-preview img {
     max-width: 300px;
