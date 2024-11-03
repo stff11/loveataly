@@ -24,7 +24,7 @@ const images = [
     "images/pasta.jpeg",
     "images/pasta2.jpeg",
     "images/mix.jpeg",
-    "images/arancini.jpeg",
+    "images/mortadella.jpeg",
     
     "images/sweets.jpeg",
     "images/cakes.jpeg",

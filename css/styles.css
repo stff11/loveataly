@@ -193,6 +193,7 @@ a:hover {
 .menu-card {
   background-color: white;
   padding: 2rem;
+  margin: 1rem 0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -351,6 +352,7 @@ footer p {
   } 
   .menu-card {
     padding: 5px;
+    margin: 10px 0;
   }
   .mobile-only {
     display: block;
