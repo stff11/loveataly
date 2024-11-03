@@ -182,13 +182,13 @@ a:hover {
   display: block; /* Show when active */
 }
 
-.menu-container {
+/* .menu-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
   max-width: 600px;
   margin: 1rem auto;
-}
+} */
 
 .menu-card {
   background-color: white;
@@ -349,6 +349,9 @@ footer p {
   .about-content {
     flex-direction: column; /* 1 column on small screens */
   } 
+  .menu-card {
+    padding: 5px;
+  }
   .mobile-only {
     display: block;
   }
