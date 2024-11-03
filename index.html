@@ -17,8 +17,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Photo Swipe JS photo gallery -->
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
-    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.css">
-    <script src="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.umd.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.css">
+    <script src="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.umd.js"></script> -->
 
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -404,44 +404,18 @@
     <script src="script.js"></script>
 
     <!-- For Gallery -->
-    <script>
-        const lightbox = new PhotoSwipeLightbox({
-          gallery: '.gallery',
-          children: 'a',
-          pswpModule: PhotoSwipe,
-          padding: { top: 20, bottom: 20, left: 20, right: 20 },  // Adjust padding if needed
-          showHideOpacity: true
-        });
-      
-        // Add controls to the PhotoSwipe instance
-        lightbox.on('uiRegister', function () {
-          lightbox.pswp.ui.registerElement({
-            name: 'arrowPrev',
-            className: 'pswp__button--arrow--prev',
-            title: 'Previous',
-            order: 10,
-            onClick: (pswp) => pswp.prev()
-          });
-      
-          lightbox.pswp.ui.registerElement({
-            name: 'arrowNext',
-            className: 'pswp__button--arrow--next',
-            title: 'Next',
-            order: 11,
-            onClick: (pswp) => pswp.next()
-          });
-      
-          lightbox.pswp.ui.registerElement({
-            name: 'closeButton',
-            className: 'pswp__button--close',
-            title: 'Close',
-            order: 12,
-            onClick: (pswp) => pswp.close()
-          });
-        });
-      
-        lightbox.init();
-      </script>
+<!-- PhotoSwipe JavaScript -->
+<script src="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.umd.js"></script>
+<script>
+  // Initialize PhotoSwipe
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '.gallery',
+    children: 'a',
+    pswpModule: PhotoSwipe
+  });
+
+  lightbox.init();
+</script>
 
 </body>
 
