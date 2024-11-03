@@ -4,6 +4,7 @@
 
 .gallery-preview img {
   max-width: 260px;
+  cursor: pointer;
 }
 
 .modal {
