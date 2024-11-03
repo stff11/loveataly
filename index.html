@@ -243,13 +243,6 @@
         </div>
         <button class="btn" onclick="toggleSection('menuSection')">Close menu</button>
     </section>
-    <div id="fullImageModal" class="modal">
-        <div class="overlay" onclick="closeFullImage()"></div>
-        <span class="close" onclick="closeFullImage()">&times;</span>
-        <img class="modal-content" id="fullImage">
-        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
-        <button class="next" onclick="changeImage(1)">&#10095;</button>
-    </div>
 
     <section class="container question-block" id="gallery-container">
         <div>
@@ -264,18 +257,11 @@
     <section class="hidden-section container" id="gallery">
         <h1 class="pb-4"><span>GALLERY</span></h1>
         <div class="gallery-preview">
-            <a href="images/sandwich.webp" data-pswp-width="1200" data-pswp-height="800">
-                <img src="images/sandwich.webp" alt="Sandwich">
-            </a>
-            <a href="images/pasta.webp" data-pswp-width="1200" data-pswp-height="800">
-                <img src="images/pasta.webp" alt="Pasta">
-            </a>
-            <a href="images/chicken.webp" data-pswp-width="1200" data-pswp-height="800">
-                <img src="images/chicken.webp" alt="Chicken">
-             </a>
-             <a href="images/pies.webp" data-pswp-width="1200" data-pswp-height="800">
-                <img src="images/pies.webp" alt="Pies">
-            </a>
+
+                <img src="images/sandwich.webp" alt="Sandwich" onclick="showFullImage(0)">
+                <img src="images/pasta.webp" alt="Pasta" onclick="showFullImage(1)">
+                <img src="images/chicken.webp" alt="Chicken" onclick="showFullImage(2)">
+                <img src="images/pies.webp" alt="Pies" onclick="showFullImage(3)">
 
             <a href="images/arancini.jpeg" data-pswp-width="1200" data-pswp-height="800">
                 <img src="images/arancini.jpeg" alt="Arancini">
@@ -354,6 +340,13 @@
             <a href="images/van4.jpeg" data-pswp-width="1200" data-pswp-height="800">
                 <img src="images/van4.jpeg" alt="van">
             </a>
+        </div>
+        <div id="fullImageModal" class="modal">
+            <div class="overlay" onclick="closeFullImage()"></div>
+            <span class="close" onclick="closeFullImage()">&times;</span>
+            <img class="modal-content" id="fullImage">
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
         </div>
         <button class="btn" onclick="toggleSection('gallery')">Close gallery</button>
     </section>
