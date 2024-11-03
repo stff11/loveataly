@@ -280,14 +280,6 @@ ul {
 }
 /****** My Button End  ******/
 
-.gallery-preview {
-  text-align: center;
-}
-
-.gallery-preview img {
-  max-width: 265px;
-}
-
 footer {
   background-color: #e9ecef;
   padding: 1rem;
@@ -338,7 +330,12 @@ footer p {
   }
   #logo {
     max-width: 340px;
-}
+  }
+  .navbar-toggler-icon {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") no-repeat center center;
+    width: 35px;
+    height: 35px;
+  }
   .intro {
     font-size: 1.3rem;
     line-height: 1.6rem;
@@ -354,12 +351,5 @@ footer p {
   } 
   .mobile-only {
     display: block;
-  }
-  .gallery-preview {
-    display: grid;
-    gap: 10px;
-  }
-  .gallery-preview img {
-    max-width: 300px;
   }
 }
