@@ -233,6 +233,13 @@ ul {
   margin-top: 5px;
 }
 
+.contact-overlay {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  max-width: fit-content;
+  margin: auto;
+}
+
 .contact-info {
   background: url("../images/caprese2.jpeg") center center/cover;
   text-align: left;
