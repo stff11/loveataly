@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/gallery.css">
+    <!-- <link rel="stylesheet" href="css/gallery.css"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -405,17 +405,41 @@
 
     <!-- For Gallery -->
     <script>
-        // Initialize PhotoSwipe lightbox
         const lightbox = new PhotoSwipeLightbox({
           gallery: '.gallery',
           children: 'a',
           pswpModule: PhotoSwipe,
-          showHideOpacity: true,         // Adds fade transition
-          showAnimationDuration: 333,    // Optional: animation timing
-          hideAnimationDuration: 333     // Optional: animation timing
+          padding: { top: 20, bottom: 20, left: 20, right: 20 },  // Adjust padding if needed
+          showHideOpacity: true
         });
       
-        // Initialize the controls
+        // Add controls to the PhotoSwipe instance
+        lightbox.on('uiRegister', function () {
+          lightbox.pswp.ui.registerElement({
+            name: 'arrowPrev',
+            className: 'pswp__button--arrow--prev',
+            title: 'Previous',
+            order: 10,
+            onClick: (pswp) => pswp.prev()
+          });
+      
+          lightbox.pswp.ui.registerElement({
+            name: 'arrowNext',
+            className: 'pswp__button--arrow--next',
+            title: 'Next',
+            order: 11,
+            onClick: (pswp) => pswp.next()
+          });
+      
+          lightbox.pswp.ui.registerElement({
+            name: 'closeButton',
+            className: 'pswp__button--close',
+            title: 'Close',
+            order: 12,
+            onClick: (pswp) => pswp.close()
+          });
+        });
+      
         lightbox.init();
       </script>
 

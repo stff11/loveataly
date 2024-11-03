@@ -280,6 +280,14 @@ ul {
 }
 /****** My Button End  ******/
 
+.gallery-preview {
+  text-align: center;
+}
+
+.gallery-preview img {
+  max-width: 300px;
+}
+
 footer {
   background-color: #e9ecef;
   padding: 1rem;
@@ -346,5 +354,12 @@ footer p {
   } 
   .mobile-only {
     display: block;
+  }
+  .gallery-preview {
+    display: grid;
+    gap: 10px;
+  }
+  .gallery-preview img {
+    max-width: 300px;
   }
 }
