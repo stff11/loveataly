@@ -17,6 +17,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Photo Swipe JS photo gallery -->
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.css">
     <script src="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.umd.js"></script>
 
     <link rel="stylesheet" href="css/navbar.css">
@@ -99,7 +100,7 @@
         </div>
     </section>
 
-    <section class="container my-4 question-block" id="menu-container">
+    <section class="container question-block" id="menu-container">
         <div class="column">
             <div class="mobile-only">
                 <img src="images/mix.jpeg" alt="Antipasto">
@@ -148,11 +149,11 @@
                 </div>
             </div>
             <h4 class="question">Want to see more options?</h4>
-            <button class="btn" onclick="toggleSection('menuSection')">Check our Menus</button>
+            <button class="btn" onclick="toggleSection('menuSection')">Check all our Menus</button>
         </div>
     </section>
 
-    <section class="hidden-section container my-4" id="menuSection">
+    <section class="hidden-section menu-container" id="menuSection">
         <div class="menu-container">
             <h1 class="h1 pb-3">MENUS</h1>
             <div class="menu-card">
@@ -404,14 +405,19 @@
 
     <!-- For Gallery -->
     <script>
+        // Initialize PhotoSwipe lightbox
         const lightbox = new PhotoSwipeLightbox({
           gallery: '.gallery',
           children: 'a',
-          pswpModule: PhotoSwipe
+          pswpModule: PhotoSwipe,
+          showHideOpacity: true,         // Adds fade transition
+          showAnimationDuration: 333,    // Optional: animation timing
+          hideAnimationDuration: 333     // Optional: animation timing
         });
       
+        // Initialize the controls
         lightbox.init();
-    </script>
+      </script>
 
 </body>
 
