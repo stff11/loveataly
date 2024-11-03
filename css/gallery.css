@@ -1,5 +1,9 @@
+.gallery-preview {
+  text-align: center;
+}
+
 .gallery-preview img {
-  max-width: 250px;
+  max-width: 300px;
 }
 
 .modal {

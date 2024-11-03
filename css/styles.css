@@ -147,6 +147,7 @@ a:hover {
   padding-top: 5rem;
   padding-bottom: 5rem;
   grid-template-areas: "image text";
+  margin-bottom: 0;
 }
 
 .question-block > .text {
@@ -174,7 +175,7 @@ a:hover {
   padding: 20px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .hidden-section.active {
