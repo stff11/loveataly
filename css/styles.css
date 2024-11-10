@@ -237,7 +237,7 @@ ul {
 
 .contact-overlay {
   background: rgba(255, 255, 255, 0.8);
-  padding: 2rem;
+  padding: 5rem;
   max-width: fit-content;
   margin: auto;
 }
@@ -245,6 +245,7 @@ ul {
 .contact-info {
   background: url("../images/caprese2.jpeg") center center/cover;
   text-align: left;
+  padding: 10%;
 }
 
 .social-media {
@@ -353,6 +354,9 @@ footer p {
   .menu-card {
     padding: 5px;
     margin: 10px 0;
+  }
+  .contact-overlay {
+    padding: 3rem;
   }
   .mobile-only {
     display: block;
