@@ -301,6 +301,28 @@ footer p {
   margin: 0;
 }
 
+/* Style for the Back to Top button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 20px;    /* Position the button 20px from the bottom */
+  right: 20px;     /* Position the button 20px from the right */
+  background-color: #333;  /* Dark background */
+  color: #fff;     /* White arrow */
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  display: none;   /* Hidden by default */
+}
+
+/* Show the button when the user scrolls down */
+.back-to-top-btn:hover {
+  opacity: 1;   /* Full opacity on hover */
+}
+
  /***** Cookies  *****/
  .cookie-consent-banner {
   position: fixed;

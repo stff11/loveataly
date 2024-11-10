@@ -58,6 +58,7 @@ function changeImage(direction) {
 }
 
 // For hidden sections (Menu and Gallery)
+///////////////////////////////////////////////////////
 function toggleSection(sectionId) {
     const section = document.getElementById(sectionId);
     section.classList.toggle("active");
@@ -73,7 +74,8 @@ function toggleSection(sectionId) {
     }
   }
 
-// Select the blocks
+// For the blocks with background on hover (for mobile)
+///////////////////////////////////////////////////////
 const leftBlock = document.querySelector('.left-block');
 const rightBlock = document.querySelector('.right-block');
 
@@ -93,3 +95,24 @@ leftBlock.addEventListener('touchend', () => removeBackgroundImage(leftBlock));
 
 rightBlock.addEventListener('touchstart', () => addBackgroundImage(rightBlock, '../images/van4.jpeg'));
 rightBlock.addEventListener('touchend', () => removeBackgroundImage(rightBlock));
+
+// Back to Top button
+///////////////////////////////////////////////////////
+const backToTopButton = document.getElementById("back-to-top");
+
+// Show the button when the user scrolls down, hide it when at the top
+window.onscroll = function () {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    backToTopButton.style.display = "block";  // Show button
+  } else {
+    backToTopButton.style.display = "none";   // Hide button
+  }
+};
+
+// Scroll smoothly to the top when the button is clicked
+backToTopButton.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
