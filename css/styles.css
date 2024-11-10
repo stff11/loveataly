@@ -351,6 +351,10 @@ footer p {
     margin: 10px 0;
   }
 
+  .question-block {
+    gap: 0;
+  }
+
   .contact-overlay {
     padding: 3rem;
   }
