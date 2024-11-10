@@ -173,15 +173,31 @@ a:hover {
   font-weight: 600;
 }
 
-.hidden-section {
-  display: none; /* Hidden by default */
+/* .hidden-section {
+  display: none; / Hidden by default /
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   margin-top: 0;
 }
 
 .hidden-section.active {
-  display: block; /* Show when active */
+  display: block; / Show when active /
+} */
+/* Initially hide the section */
+.hidden-section {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-top: 0;
+}
+
+/* When the section is active, allow it to expand */
+.hidden-section.active {
+  max-height: 500px;  /* Adjust the max-height to suit the content size */
+  opacity: 1;
 }
 
 .menu-card {
@@ -272,7 +288,7 @@ ul {
 }
 .btn:active {
   transform: translate(3px, 6px); /* Match shadow offset for consistent depth */
-  box-shadow: 1px 2px #1a2533; /* Smaller shadow for pressed effect */
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2); /* Smaller shadow for pressed effect */
 }
 /****** My Button End  ******/
 
@@ -325,12 +341,9 @@ footer p {
     line-height: 1.4rem;
   }
 
-  #logo {
-    max-width: 340px;
-  }
-
-  #hero h1 {
-    font-size: 1.5rem;
+  #logo,
+  .cta-button {
+    width: 340px;
   }
 
   .container {

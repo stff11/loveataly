@@ -60,8 +60,18 @@ function changeImage(direction) {
 // For hidden sections (Menu and Gallery)
 function toggleSection(sectionId) {
     const section = document.getElementById(sectionId);
-    section.classList.toggle('active'); // Toggle the active class
-}
+    section.classList.toggle("active");
+  
+    // Scroll the section into view with a smooth effect
+    if (section.classList.contains("active")) {
+      setTimeout(() => {
+        section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        });
+      }, 300);  // Delay for smooth transition
+    }
+  }
 
 // Select the blocks
 const leftBlock = document.querySelector('.left-block');
