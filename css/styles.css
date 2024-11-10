@@ -184,14 +184,6 @@ a:hover {
   display: block; /* Show when active */
 }
 
-/* .menu-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 600px;
-  margin: 1rem auto;
-} */
-
 .menu-card {
   background-color: white;
   padding: 2rem;
@@ -342,7 +334,7 @@ footer p {
   }
 
   .container {
-    padding: 3%;
+    padding: 10% 3%;
   }
 
   .intro {
@@ -359,10 +351,6 @@ footer p {
     margin: 10px 0;
   }
 
-  .contact-info {
-    padding: 10% 3%;
-  }
-
   .contact-overlay {
     padding: 3rem;
   }
@@ -374,11 +362,9 @@ footer p {
 
 /* For touch devices */
 @media (hover: none) and (pointer: coarse) {
-  .left-block:hover,
   .left-block:active {
     background-image: url('../images/van2.jpeg');
   }
-  .right-block:hover,
   .right-block:active {
     background-image: url('../images/van4.jpeg');
   }

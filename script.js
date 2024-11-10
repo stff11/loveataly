@@ -57,7 +57,29 @@ function changeImage(direction) {
     document.getElementById("fullImage").src = images[currentIndex];
 }
 
+// For hidden sections (Menu and Gallery)
 function toggleSection(sectionId) {
     const section = document.getElementById(sectionId);
     section.classList.toggle('active'); // Toggle the active class
 }
+
+// Select the blocks
+const leftBlock = document.querySelector('.left-block');
+const rightBlock = document.querySelector('.right-block');
+
+// Function to change background image on touch
+function addBackgroundImage(element, imageUrl) {
+  element.style.backgroundImage = `url('${imageUrl}')`;
+}
+
+// Function to remove background image
+function removeBackgroundImage(element) {
+  element.style.backgroundImage = 'none';
+}
+
+// Add touchstart and touchend events
+leftBlock.addEventListener('touchstart', () => addBackgroundImage(leftBlock, '../images/van2.jpeg'));
+leftBlock.addEventListener('touchend', () => removeBackgroundImage(leftBlock));
+
+rightBlock.addEventListener('touchstart', () => addBackgroundImage(rightBlock, '../images/van4.jpeg'));
+rightBlock.addEventListener('touchend', () => removeBackgroundImage(rightBlock));
