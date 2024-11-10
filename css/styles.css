@@ -122,10 +122,12 @@ a:hover {
 }
 
 /* Show background images on hover */
-.left-block:hover{
+.left-block:hover,
+.left-block:active {
   background-image: url('../images/van2.jpeg');
 }
-.right-block:hover {
+.right-block:hover,
+.right-block:active {
   background-image: url('../images/van4.jpeg');
 }
 
@@ -330,35 +332,54 @@ footer p {
     font-size: 1.1rem;
     line-height: 1.4rem;
   }
+
   #logo {
     max-width: 340px;
   }
-  .navbar-toggler-icon {
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") no-repeat center center;
-    width: 35px;
-    height: 35px;
+
+  #hero h1 {
+    font-size: 1.5rem;
   }
+
+  .container {
+    padding: 3%;
+  }
+
   .intro {
     font-size: 1.3rem;
     line-height: 1.6rem;
   }
-  .nav-item {
-    margin-left: auto;
-  }
-  #hero h1 {
-    font-size: 1.5rem;
-  }
+
   .about-content {
     flex-direction: column; /* 1 column on small screens */
   } 
+
   .menu-card {
     padding: 5px;
     margin: 10px 0;
   }
+
+  .contact-info {
+    padding: 10% 3%;
+  }
+
   .contact-overlay {
     padding: 3rem;
   }
+
   .mobile-only {
     display: block;
+  }
+}
+
+/* For touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .left-block:hover,
+  .left-block:active {
+    background-image: url('../images/van2.jpeg');
+  }
+  .right-block:hover,
+  .right-block:active {
+    background-image: url('../images/van4.jpeg');
   }
 }
