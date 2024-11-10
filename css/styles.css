@@ -186,20 +186,18 @@ a:hover {
 
 /* Initially hide the section */
 .hidden-section {
-  transform: scaleY(0);  /* Start collapsed */
-  opacity: 0;
-  transform-origin: top;  /* Ensure it expands from top to bottom */
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  overflow: hidden;
+  visibility: hidden;  /* Make it invisible */
+  height: 0;  /* Collapse the height */
+  overflow: hidden;  /* Prevent any content from showing */
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   margin-top: 0;
+  transition: height 0.3s ease, visibility 0.3s ease;  /* Add smooth transition for height and visibility */
 }
 
-/* When the section is active, scale it to full size and fade in */
 .hidden-section.active {
-  transform: scaleY(1);  /* Expand to full size */
-  opacity: 1;
+  visibility: visible;  /* Make it visible when active */
+  height: auto;  /* Restore the height */
 }
 
 .menu-card {
