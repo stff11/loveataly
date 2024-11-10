@@ -183,20 +183,22 @@ a:hover {
 .hidden-section.active {
   display: block; / Show when active /
 } */
+
 /* Initially hide the section */
 .hidden-section {
-  max-height: 0;
-  overflow: hidden;
+  transform: scaleY(0);  /* Start collapsed */
   opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
+  transform-origin: top;  /* Ensure it expands from top to bottom */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  overflow: hidden;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   margin-top: 0;
 }
 
-/* When the section is active, allow it to expand */
+/* When the section is active, scale it to full size and fade in */
 .hidden-section.active {
-  max-height: 500px;  /* Adjust the max-height to suit the content size */
+  transform: scaleY(1);  /* Expand to full size */
   opacity: 1;
 }
 
